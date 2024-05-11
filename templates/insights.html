@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Insights{% endblock %}
+
+{% block content %}
+<div class="banner-insights">
+    <h1>Exciting Insights Coming Soon!</h1>
+    <p>We're working on some exciting content to share with you. Stay tuned for insights, articles, and more!</p>
+    <p>In the meantime, follow our <a href="https://www.google.com" target="_blank">page</a> for updates and industry news.</p>
+
+    <ul>
+        {% for item in blogs %}
+        <li><a href="{{item.url}}" target="_blank">{{ item.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

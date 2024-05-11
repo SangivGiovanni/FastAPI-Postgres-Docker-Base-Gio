@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Dependency directories
+.env/
+venv/
+env/
+env_bak/
+env-*/
+.venv/
+.idea/
+
+# Local development
+.docker/
+docker-compose.yml
+docker-compose.override.yml
+docker-compose.override.yml.example
+.env.docker
+.env.docker.example
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite3
+db.sqlite3
+logs/
+
+# IDEs and editors
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Ignore docker-compose override files
+!docker-compose*.override.yml
